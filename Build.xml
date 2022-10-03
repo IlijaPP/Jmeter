@@ -122,7 +122,7 @@
             force="true"
             in="${testpath}/NopCommerc.jtl"
             out="${testpath}/NopCommerc.html"
-            style="${basedir}/jmeter-results-detail-report${style_version}.xsl">
+            style="${basedir}/jmeter.xsl">
             <param name="showData" expression="${show-data}"/>
             <param name="titleReport" expression="${report.title}"/>
             <param name="dateReport" expression="${report.datestamp}"/>
