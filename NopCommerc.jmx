@@ -3099,7 +3099,17 @@ else{
               <hashTree/>
             </hashTree>
             <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
-              <stringProp name="BeanShellSampler.query">print(&quot;help&quot;);</stringProp>
+              <stringProp name="BeanShellSampler.query">import org.apache.jmeter.services.FileServer;
+
+String rndEmail = vars.get(&quot;Email&quot;);
+String userPassword = &quot;111222333Prilep&quot;;
+
+String FilePath = FileServer.getFileServer().getBaseDir();
+f = new FileOutputStream(FilePath+&quot;account.csv&quot;, true);
+p = new PrintStream(f); 
+this.interpreter.setOut(p); 
+print(rndEmail + &quot;,&quot; + userPassword );
+f.close();</stringProp>
               <stringProp name="BeanShellSampler.filename"></stringProp>
               <stringProp name="BeanShellSampler.parameters"></stringProp>
               <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
