@@ -41,7 +41,7 @@
         -Dreport.title="My Report" - title for html report (default is 'Load Test Results')
     </description>
 
-    <property name="testpath" value="C:\ProgramData\Jenkins\.jenkins\workspace\Jmeter"/>
+    <property name="testpath" value="C:\ProgramData\Jenkins\.jenkins\workspace\NopCommerc"/>
     <property name="jmeter.home" value="D:\Jmeter\apache-jmeter-5.4.3"/>
     <property name="report.title" value="NopCommerc Results"/>
 
